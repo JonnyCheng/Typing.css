@@ -1,1 +1,1 @@
-# Typing.css
+# Typing.scss
