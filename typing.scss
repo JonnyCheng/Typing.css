@@ -1,0 +1,236 @@
+/* 
+ * -------------------------------------------------
+ * Author:JonnyCheng
+ * Update:2015-09-01
+ * Name:Typing.scss
+ * -------------------------------------------------
+*/
+
+/* Set the encoding of the style sheet to Unicode UTF-8 */
+@charset "UTF-8";
+/* Reset */
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+/* Adjusts the text size on a webpage */
+html {
+    font-family: "sans-serif","Helvetica","Hiragino Sans GB","STHeiti Light","Microsoft YaHei";
+    font-size: 14px;
+    line-height: 1.8;
+    background: #fff;
+    text-rendering: optimizelegibility;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+    -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    line-height: 1.35;
+}
+/* Emulate the behavior of browsers that do not correctly support the CSS box model specification */
+html.boxmodel *, html.boxmodel *:before, html.boxmodel *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/* Reset some HTML5 tag */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Decrease table cell */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Decrease border */
+fieldset, img {
+    border: 0;
+}
+
+/* Add question mark */
+abbr {
+    cursor: help;
+}
+
+/* Same del sytle */
+del {
+    text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Remove list style */
+ul, ol {
+    list-style: none;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Code */
+pre, code, pre tt {
+    font-family: Courier, 'Courier New', monospace;
+}
+
+pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 1em 1.5em;
+    display: block;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+}
+
+/* Clearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/* --------------------------------------------------------------------------
+    「·」（Middle dot）
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+00B7;
+    src: local('Hiragino GB'),
+    local('Heiti SC'),
+    local(STHeiti),
+    local(SimSun);
+}
+
+/* --------------------------------------------------------------------------
+   「——」（EM dash）
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+2014;
+    src: local('Hiragino Sans GB'),
+    local('Hiragino Kaku Gothic ProN'),
+    local('Hiragino Kaku Gothic Pro'),
+    local('Microsoft Yahei'),
+    local(SimSun);
+}
+
+/* --------------------------------------------------------------------------
+   「……」（Ellipsis）
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+2026;
+    src: local('Hiragino Sans GB'),
+    local('Hiragino Kaku Gothic ProN'),
+    local('Hiragino Kaku Gothic Pro'),
+    local(Meiryo),
+    local('MS Gothic'),
+    local(SimSun),
+    local(PMingLiU);
+}
+
+/* --------------------------------------------------------------------------
+    「“‘’”」（Curve quotes）
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+201C-201D, U+2018-2019;
+    src: local('Hiragino Sans GB'),
+    local('Heiti SC'),
+    local(STHeiti),
+    local(SimSun),
+    local(PMingLiU);
+}
+
+/* --------------------------------------------------------------------------
+   「，。；：」
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+FF0C, U+3002, U+FF1B, U+FF1A;
+    src: local('Hiragino Kaku Gothic ProN'),
+    local('Hiragino Kaku Gothic Pro'),
+    local('MS Gothic'),
+    local('SimSun');
+}
+
+/* --------------------------------------------------------------------------
+   「、」
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+3001;
+    src: local('Hiragino Kaku Gothic ProN'),
+    local('Hiragino Kaku Gothic Pro'),
+    local('SimSun'),
+    local('MS Mincho'),
+    local('PMingLiU');
+}
+
+/* --------------------------------------------------------------------------
+   「￥」（Yen）
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "type";
+    unicode-range: U+00A5;
+    src: local(arial);
+}
+
+@font-face {
+    font-family: "type";
+    src: local('Fix Firefox');
+    unicode-range: U+270C;
+}
